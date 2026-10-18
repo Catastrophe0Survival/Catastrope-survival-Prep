@@ -1,0 +1,27 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background transparent -->
+  <rect width="300" height="300" fill="none"/>
+
+  <!-- Central Silver Plus -->
+  <rect x="135" y="70" width="30" height="160" fill="#C0C0C0"/>
+  <rect x="70" y="135" width="160" height="30" fill="#C0C0C0"/>
+
+  <!-- House Icon (Top) -->
+  <polygon points="150,40 110,80 190,80" fill="#C0C0C0"/>
+  <rect x="120" y="80" width="60" height="40" fill="#C0C0C0"/>
+
+  <!-- Tools Icon (Bottom) -->
+  <!-- Hammer -->
+  <rect x="130" y="200" width="40" height="15" fill="#C0C0C0"/>
+  <rect x="145" y="215" width="10" height="40" fill="#C0C0C0"/>
+
+  <!-- Wrench -->
+  <path d="M150 260 
+           a20 20 0 1 1 0 -40 
+           l10 10 
+           l-10 10 
+           z" 
+        fill="#C0C0C0"/>
+
+</svg>
