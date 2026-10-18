@@ -2,7 +2,7 @@
 body {
     background: url("/Catastrophe-survival-Prep/assets/img/night-sky.jpg") no-repeat center center fixed;
     background-size: cover;
-    background-color: #000000; /* fallback if image fails */
+    background-color: #000000; /* fallback */
     font-family: 'Inter', sans-serif;
     text-align: center;
     margin: 0;
@@ -55,4 +55,57 @@ p, li {
 }
 
 /* --- BUTTON GRID --- */
-.button-grid
+.button-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+/* --- CATEGORY BUTTONS (silver) --- */
+.nav-button {
+    background-color: #C0C0C0;
+    padding: 20px 40px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+    border: 2px solid #8B0000;
+    transition: 0.3s;
+    display: inline-block;
+    margin-top: 10px;
+    box-shadow: 0 0 10px #000;
+}
+
+.nav-button:hover {
+    background-color: #D40000;
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #D40000;
+}
+
+/* --- LOGO --- */
+header img {
+    margin-bottom: 20px;
+    filter: drop-shadow(0 0 8px #000);
+}
+
+/* --- MOBILE RESPONSIVE --- */
+@media (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+
+    .nav-button {
+        width: 80%;
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    header img {
+        width: 120px;
+    }
+}
