@@ -1,6 +1,6 @@
 /* --- GLOBAL STYLES --- */
 body {
-    background: url("/Catastrophe-survival-Prep/assets/img/night-sky.jpg") no-repeat center center fixed;
+    background: url("https://catastrophe0survival.github.io/Catastrophe-survival-Prep/assets/img/night-sky.jpg") no-repeat center center fixed;
     background-size: cover;
     background-color: #000000; /* fallback */
     font-family: 'Inter', sans-serif;
@@ -10,6 +10,7 @@ body {
     position: relative;
     color: #D40000;
 }
+
 
 /* Overlay for readability */
 body::before {
