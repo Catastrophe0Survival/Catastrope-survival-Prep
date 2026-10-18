@@ -1,27 +1,26 @@
 /* --- GLOBAL STYLES --- */
 
 body {
-    background-color: #000000; /* Black */
-    color: #D40000; /* Red text */
+    background-color: #000000; /* Black background */
     font-family: 'Inter', sans-serif;
     text-align: center;
     padding: 40px;
 }
 
-h1 {
-    color: #D40000; /* Red */
+/* --- HEADINGS --- */
+h1, h2, h3 {
+    color: #C0C0C0; /* Silver category titles */
     font-family: 'Oswald', sans-serif;
-    font-size: 48px;
     margin-bottom: 10px;
 }
 
+/* --- INFORMATION TEXT --- */
 p, li {
     color: #D40000; /* Red information text */
     font-size: 18px;
 }
 
 /* --- BUTTON GRID --- */
-
 .button-grid {
     display: flex;
     flex-wrap: wrap;
@@ -30,8 +29,9 @@ p, li {
     margin-top: 40px;
 }
 
+/* --- CATEGORY BUTTONS --- */
 .nav-button {
-    background-color: #C0C0C0; /* Silver */
+    background-color: #C0C0C0; /* Silver buttons */
     padding: 20px 40px;
     border-radius: 10px;
     text-decoration: none;
@@ -50,3 +50,4 @@ p, li {
     border-color: #FFFFFF;
     transform: scale(1.05);
 }
+
