@@ -1,25 +1,64 @@
 /* --- GLOBAL STYLES --- */
+
 body {
-    background-color: #000000; /* Black background */
+    /* Night sky background */
+    background: url("assets/img/night-sky.jpg") no-repeat center center fixed;
+    background-size: cover;
+
     font-family: 'Inter', sans-serif;
     text-align: center;
+    margin: 0;
     padding: 40px;
+
+    /* Dark overlay to improve text visibility */
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45); /* Slight dark overlay */
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* Iron fence silhouette at bottom */
+body::after {
+    content: "";
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 180px;
+    background: url("assets/img/fence.png") repeat-x bottom;
+    background-size: contain;
+    pointer-events: none;
+    z-index: 10;
 }
 
 /* --- HEADINGS (silver) --- */
+
 h1, h2, h3 {
     color: #C0C0C0; /* Silver */
     font-family: 'Oswald', sans-serif;
     margin-bottom: 10px;
+    text-shadow: 0 0 8px #000; /* Glow for visibility */
 }
 
 /* --- INFORMATION TEXT (red) --- */
+
 p, li {
     color: #D40000; /* Red */
     font-size: 18px;
+    text-shadow: 0 0 5px #000;
 }
 
 /* --- BUTTON GRID --- */
+
 .button-grid {
     display: flex;
     flex-wrap: wrap;
@@ -29,6 +68,7 @@ p, li {
 }
 
 /* --- CATEGORY BUTTONS (silver) --- */
+
 .nav-button {
     background-color: #C0C0C0; /* Silver */
     padding: 20px 40px;
@@ -41,6 +81,7 @@ p, li {
     transition: 0.3s;
     display: inline-block;
     margin-top: 10px;
+    box-shadow: 0 0 10px #000;
 }
 
 .nav-button:hover {
@@ -48,8 +89,33 @@ p, li {
     color: #FFFFFF; /* White text */
     border-color: #FFFFFF;
     transform: scale(1.05);
+    box-shadow: 0 0 15px #D40000;
 }
 
+/* --- LOGO --- */
+
+header img {
+    margin-bottom: 20px;
+    filter: drop-shadow(0 0 8px #000);
+}
+
+/* --- MOBILE RESPONSIVE --- */
+
+@media (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+
+    .nav-button {
+        width: 80%;
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    header img {
+        width: 120px;
+    }
+}
 
 
 
