@@ -1,5 +1,4 @@
 /* --- GLOBAL STYLES --- */
-
 body {
     background-color: #000000; /* Black background */
     font-family: 'Inter', sans-serif;
@@ -50,5 +49,6 @@ p, li {
     border-color: #FFFFFF;
     transform: scale(1.05);
 }
+
 
 
