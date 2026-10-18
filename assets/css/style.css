@@ -1,5 +1,6 @@
 /* --- GLOBAL STYLES --- */
 body {
+    background-color: #000000;
     background: url("assets/img/night-sky.jpg") no-repeat center center fixed;
     background-size: cover;
     font-family: 'Inter', sans-serif;
