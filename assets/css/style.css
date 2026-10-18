@@ -7,16 +7,16 @@ body {
     padding: 40px;
 }
 
-/* --- HEADINGS --- */
+/* --- HEADINGS (silver) --- */
 h1, h2, h3 {
-    color: #C0C0C0; /* Silver category titles */
+    color: #C0C0C0; /* Silver */
     font-family: 'Oswald', sans-serif;
     margin-bottom: 10px;
 }
 
-/* --- INFORMATION TEXT --- */
+/* --- INFORMATION TEXT (red) --- */
 p, li {
-    color: #D40000; /* Red information text */
+    color: #D40000; /* Red */
     font-size: 18px;
 }
 
@@ -29,13 +29,13 @@ p, li {
     margin-top: 40px;
 }
 
-/* --- CATEGORY BUTTONS --- */
+/* --- CATEGORY BUTTONS (silver) --- */
 .nav-button {
-    background-color: #C0C0C0; /* Silver buttons */
+    background-color: #C0C0C0; /* Silver */
     padding: 20px 40px;
     border-radius: 10px;
     text-decoration: none;
-    color: #000000; /* Black text on silver buttons */
+    color: #000000; /* Black text */
     font-size: 20px;
     font-family: 'Roboto Mono', monospace;
     border: 2px solid #8B0000; /* Deep red border */
@@ -46,8 +46,9 @@ p, li {
 
 .nav-button:hover {
     background-color: #D40000; /* Red hover */
-    color: #FFFFFF; /* White text on hover */
+    color: #FFFFFF; /* White text */
     border-color: #FFFFFF;
     transform: scale(1.05);
 }
+
 
