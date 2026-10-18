@@ -1,19 +1,15 @@
 /* --- GLOBAL STYLES --- */
-
 body {
-    /* Night sky background */
     background: url("assets/img/night-sky.jpg") no-repeat center center fixed;
     background-size: cover;
-
     font-family: 'Inter', sans-serif;
     text-align: center;
     margin: 0;
     padding: 40px;
-
-    /* Dark overlay to improve text visibility */
     position: relative;
 }
 
+/* Overlay for readability */
 body::before {
     content: "";
     position: fixed;
@@ -21,7 +17,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.45); /* Slight dark overlay */
+    background: rgba(0, 0, 0, 0.45);
     pointer-events: none;
     z-index: -1;
 }
@@ -38,27 +34,25 @@ body::after {
     background-size: contain;
     pointer-events: none;
     z-index: 10;
+    filter: drop-shadow(0 0 8px #C0C0C0);
 }
 
 /* --- HEADINGS (silver) --- */
-
 h1, h2, h3 {
-    color: #C0C0C0; /* Silver */
+    color: #C0C0C0;
     font-family: 'Oswald', sans-serif;
     margin-bottom: 10px;
-    text-shadow: 0 0 8px #000; /* Glow for visibility */
+    text-shadow: 0 0 8px #000;
 }
 
 /* --- INFORMATION TEXT (red) --- */
-
 p, li {
-    color: #D40000; /* Red */
+    color: #D40000;
     font-size: 18px;
     text-shadow: 0 0 5px #000;
 }
 
 /* --- BUTTON GRID --- */
-
 .button-grid {
     display: flex;
     flex-wrap: wrap;
@@ -68,16 +62,15 @@ p, li {
 }
 
 /* --- CATEGORY BUTTONS (silver) --- */
-
 .nav-button {
-    background-color: #C0C0C0; /* Silver */
+    background-color: #C0C0C0;
     padding: 20px 40px;
     border-radius: 10px;
     text-decoration: none;
-    color: #000000; /* Black text */
+    color: #000000;
     font-size: 20px;
     font-family: 'Roboto Mono', monospace;
-    border: 2px solid #8B0000; /* Deep red border */
+    border: 2px solid #8B0000;
     transition: 0.3s;
     display: inline-block;
     margin-top: 10px;
@@ -85,22 +78,20 @@ p, li {
 }
 
 .nav-button:hover {
-    background-color: #D40000; /* Red hover */
-    color: #FFFFFF; /* White text */
+    background-color: #D40000;
+    color: #FFFFFF;
     border-color: #FFFFFF;
     transform: scale(1.05);
     box-shadow: 0 0 15px #D40000;
 }
 
 /* --- LOGO --- */
-
 header img {
     margin-bottom: 20px;
     filter: drop-shadow(0 0 8px #000);
 }
 
 /* --- MOBILE RESPONSIVE --- */
-
 @media (max-width: 600px) {
     body {
         padding: 20px;
@@ -116,6 +107,3 @@ header img {
         width: 120px;
     }
 }
-
-
-
