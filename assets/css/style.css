@@ -7,6 +7,7 @@ body {
     margin: 0;
     padding: 40px;
     position: relative;
+    color: #D40000;
 }
 
 /* Overlay for readability */
@@ -19,7 +20,7 @@ body::before {
     height: 100%;
     background: rgba(0, 0, 0, 0.45);
     pointer-events: none;
-    z-index: -1;
+    z-index: 0;
 }
 
 /* Iron fence silhouette at bottom */
@@ -33,7 +34,7 @@ body::after {
     background: url("assets/img/fence.png") repeat-x bottom;
     background-size: contain;
     pointer-events: none;
-    z-index: 10;
+    z-index: 1;
     filter: drop-shadow(0 0 8px #C0C0C0);
 }
 
@@ -107,3 +108,4 @@ header img {
         width: 120px;
     }
 }
+
